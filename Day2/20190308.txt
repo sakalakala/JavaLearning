@@ -5,11 +5,27 @@
 	java:虚拟机执行java程序，(java 类名)
 	class Demo/*扩展名为java,输出Hello world，有ln则输出完新开一行，通过class关键字定义了一个Demo的类*/
 	{
-		public static void main(String[] args)/*主方法，保证程序可以运行，格式固定*/
+		public static void main(String[] args)/*主方法，保证程序可以运行，格式固定（公共 静态 无返回值 主方法（字符串[] 参数）*/
 		{
 			System.out.println("Hello World");/*输入语句*/
 		}
 	}
 2.重复安装JDK导致安装的版本不一致，报错“A JNI has occurred,please check your installation and try again"
-  解决方法：在DOS界面输入java -version 和javac -version检查版本是否一致，如不一致则删除java版本（控制面板程序卸载），然后重新进入cmd
-3.环境配置时删除了classpath（新版本OK）
+	解决方法：在DOS界面输入java -version 和javac -version检查版本是否一致，如不一致则删除java版本（控制面板程序卸载），然后重新进入cmd
+3.环境配置时删除了classpath（新版本OK）（？），classpath默认当前目录
+4.关键字：赋予了特殊含义的单词
+5.标识符：程序中定义的一些名称，如类名。a-z,0-9,_,$，数字不可开头，不可用关键字
+6.注释 //（单行）  /* */（多行） /** */（文档注释） 多行别嵌套
+	/*
+	需求：
+	思路：
+	步骤：
+	代码：
+	测试：
+	*/
+	//1.  
+	//2.  
+	//3.
+7.常量和变量
+	常量：不能改改变的数值（整数（二进制、八进制、十进制、十六进制）、小数、布尔、字符' '、字符串" "、null）
+	变量：
