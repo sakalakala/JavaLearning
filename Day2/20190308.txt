@@ -1,0 +1,15 @@
+2019.03.08
+1.Hello World
+	类（class）
+	javac:java编译器调用，翻译为机器语言 (javac 源文件名)，翻译结果为字节码文件class文件（Java程序）
+	java:虚拟机执行java程序，(java 类名)
+	class Demo/*扩展名为java,输出Hello world，有ln则输出完新开一行，通过class关键字定义了一个Demo的类*/
+	{
+		public static void main(String[] args)/*主方法，保证程序可以运行，格式固定*/
+		{
+			System.out.println("Hello World");/*输入语句*/
+		}
+	}
+2.重复安装JDK导致安装的版本不一致，报错“A JNI has occurred,please check your installation and try again"
+  解决方法：在DOS界面输入java -version 和javac -version检查版本是否一致，如不一致则删除java版本（控制面板程序卸载），然后重新进入cmd
+3.环境配置时删除了classpath（新版本OK）
