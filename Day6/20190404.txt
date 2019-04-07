@@ -1,0 +1,48 @@
+20190404
+1.三元运算符
+	（条件表达式）？表达式1：表达式2；//条件表达式为真则1为假则2
+	注意：条件表达式要有赋值！！！
+2.发现的奇怪bug：
+	I.System和String要大写
+	II.直接保存编译失败，显示有字符，更改为另存ANSI也不行（？）
+	III.提示需要标识符，将类名改为英文开头即可（不可用纯数字？）
+	IIII.进行语法分析时已到达文件结尾——括号问题
+3.流程控制
+	(1)顺序结构
+	(2)判断结构
+		if三种格式
+		可以理解三元运算符为格式二的简写模式，好处为简写，但是弊端在于不是所有的if-else都可以简化，因为三元运算符运算完必须有结果但if-else不需要
+	(3)选择结构
+		switch(表达式)
+		{
+			case 取值1：执行语句;break;
+			case 取值2: 执行语句;break;
+			……
+			default: 执行语句；break;
+		}
+		特点：
+		I.摆放无顺序，但执行必须从第一个case开始执行，最后执行default
+		II.遇到break之前的内容都为答案，直到遇到break才开始下一个case的判断
+		III.switch()内只支持byte\short\int\char\enum\string
+	注：switch与if的区别
+		I.if可以用于判断数值或区间，只要运算结果是bool类型均可判断
+		  switch适用于固定值的判断
+	(4)循环结构(while do-while for)(对某一语句希望执行很多次时使用)
+		I.while
+		II.do-while（与单纯的while相比先做再判断，无论条件是否满足循环体都至少执行一次）
+		III.for for中定义的变量在循环结束后就不存在了
+	注：最简单的无限循环
+	while(1){}		for(; ;){}
+		IIII.循环嵌套
+	(5)其他流程控制语句
+			I.break：使用范围——switch语句、循环语句（不执行for的第三点），不作用于其他语句
+			  多个for时可以给for起标记符号标记名字，如out:for 、in:for，则break in即表示只break名叫in的for
+			II.continue：只作用与循环结构,结束本次循环，结束下次循环,标号同样适用
+			for(int x=0;x<3;x++){
+				if(x%2==0)
+					continue;
+				p++;
+			}
+				
+	
+		
