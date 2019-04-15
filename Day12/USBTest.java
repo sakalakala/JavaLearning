@@ -25,7 +25,7 @@ class NoteBook{
 	}
 }
 //有了鼠标
-class MouseByUSB implements USB{
+class MouseByUSB /*extends Mouse*/implements USB{
 	public void open(){
 		System.out.println("mouse open");
 	}
@@ -47,7 +47,7 @@ class USBTest{
 		NoteBook book=new NoteBook();
 		book.run();
 		book.useUSB(null);
-		book.useUSB(new MouseByUSB());//USB usb=new MouseByUSB()
+		book.useUSB(new MouseByUSB());//USB useUSB=new MouseByUSB()--接口类型的引用+向上转型
 		book.useUSB(new KeyByUSB());
 	}
 }
